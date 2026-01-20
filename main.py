@@ -3,23 +3,6 @@ from models import STUDENTS, check_data_errors
 from sorting import compare_by_date, compare_full, insertion_sort
 from ui import print_student_title
 
-def check_dates():
-    clear_screen()
-    errors = check_data_errors(STUDENTS)
-    if not errors:
-        print("Все даты корректны!")
-    else:
-        print("Ошибки в следущих датах")
-        for err in errors:
-            print(f"- {err}")
-    print(f"Всего ошибок {len(errors)}")
-    wait_till_enter()
-
-def wait_till_enter():
-    while True:
-        input("Нажмите Enter для продолжения")
-        break
-
 def clear_screen():
     print("\033c", end="")
 

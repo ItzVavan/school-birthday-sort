@@ -10,7 +10,6 @@ def is_valid_date(day: int, month: int, year: int) -> bool:
     return 1 <= month <= 12 and 1 <= day <= days_in_month(month, year)
 
 def is_valid_grade(grade_num: int) -> bool:
-    """Только 8-11 классы"""
     return 8 <= grade_num <= 11
 
 def check_data_errors(students: list['Student']) -> list[str]:
