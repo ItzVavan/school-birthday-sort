@@ -3,6 +3,11 @@ from models import STUDENTS, check_data_errors
 from sorting import compare_by_date, compare_full, insertion_sort
 from ui import print_student_title
 
+def wait_till_enter():
+    while True:
+        input("Нажмите Enter для продолжения")
+        break
+
 def clear_screen():
     print("\033c", end="")
 
